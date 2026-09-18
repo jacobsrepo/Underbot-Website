@@ -1,0 +1,135 @@
+.dashboard-container {
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+
+.dashboard-header {
+  margin-bottom: 40px;
+}
+.dashboard-header h1 {
+  font-size: 2.5rem;
+}
+
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.kpi-card {
+  display: flex;
+  align-items: center;
+  padding: 24px;
+}
+
+.kpi-icon-wrapper {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  color: #fff;
+}
+.bg-blue { background: rgba(10, 102, 194, 0.2); color: var(--accent-cyan); }
+.bg-green { background: rgba(50, 205, 50, 0.2); color: #32CD32; }
+.bg-yellow { background: rgba(255, 215, 0, 0.2); color: #FFD700; }
+.bg-purple { background: rgba(138, 43, 226, 0.2); color: #E066FF; }
+
+.kpi-label {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}
+.kpi-value {
+  font-size: 2rem;
+  line-height: 1;
+}
+.kpi-unit {
+  font-size: 1rem;
+  color: var(--text-muted);
+  font-weight: 400;
+  margin-left: 4px;
+}
+.kpi-subtext {
+  font-size: 0.8rem;
+  margin-top: 6px;
+  display: flex;
+  align-items: center;
+}
+.text-cyan { color: var(--accent-cyan); }
+
+.charts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 32px;
+  margin-bottom: 40px;
+}
+
+.chart-card {
+  padding: 24px;
+}
+
+.chart-card h3 {
+  margin-bottom: 24px;
+  font-size: 1.25rem;
+}
+
+.chart-wrapper {
+  height: 300px;
+  width: 100%;
+}
+
+.power-saving-panel {
+  padding: 32px;
+}
+
+.panel-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.panel-header h2 {
+  margin: 0;
+}
+
+.optimization-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.opt-item {
+  display: flex;
+  align-items: flex-start;
+  background: rgba(255, 255, 255, 0.02);
+  padding: 16px;
+  border-radius: 12px;
+  border-left: 1px solid rgba(255,255,255,0.05);
+}
+
+.opt-indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-top: 6px;
+  margin-right: 16px;
+  flex-shrink: 0;
+}
+.opt-item h4 {
+  margin-bottom: 4px;
+  font-size: 1.1rem;
+}
+.opt-item p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .charts-grid {
+    grid-template-columns: 1fr;
+  }
+}
